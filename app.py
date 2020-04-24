@@ -5,9 +5,8 @@ from bson.objectid import ObjectId
 
 
 app = Flask(__name__)
-app.config["MONGO_DBNAME"] = 'task_manager'
-app.config["MONGO_URI"] = 'mongodb+srv://myRoot:LoveMongoDB87@myamazingcluster-96wib.mongodb.net/task_manager?retryWrites=true&w=majority'
-
+app.config["MONGO_DBNAME"] = 'Database Name'
+app.config["MONGO_URI"] = 'MongoDB database, or ENV file'
 mongo = PyMongo(app)
 
 @app.route('/')
@@ -99,5 +98,5 @@ def add_category():
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT', 5000)),
+            port=int(os.environ.get('PORT', 5010)),
             debug=True)
