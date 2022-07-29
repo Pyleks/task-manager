@@ -36,7 +36,7 @@ pyperclip==1.7.0
 pytz==2018.4
 queuelib==1.4.2
 
-Scrapy==1.5.0
+Scrapy==2.6.2
 selenium==3.141.0
 service-identity==17.0.0
 shellescape==3.4.1
